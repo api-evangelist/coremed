@@ -1,7 +1,26 @@
 aid: coremed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/coremed.png
 name: coremed
-description: coremed is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: CoreMed (Beijing) Biomedical Research Co., Ltd. is a China-based contract research
+  organization (CRO) founded in 2013 that provides clinical professional services for innovative
+  cardiovascular medical devices and structural-heart products. Its services span animal testing,
+  human clinical trials, data management, statistical analysis, and independent core-laboratory
+  imaging analysis, and it was among the first domestic providers in China to run trials for
+  interventional heart valves, LAA occluders, and bioresorbable scaffolds. Headquartered in Beijing
+  with branches in Shanghai, Guangzhou, and Chengdu, CoreMed is backed by Qiming Venture Partners.
+  This is a services/CRO company with no public API, developer portal, or machine-readable surface;
+  its site (coremed.com.cn) was unreachable at enrichment time (connection refused, expired TLS cert).
 url: https://raw.githubusercontent.com/api-evangelist/coremed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Clinical Research
+- Contract Research Organization
+- Medical Devices
+- Cardiovascular
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,8 @@ maintainers:
 common:
 - type: Website
   url: https://coremed.com.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
